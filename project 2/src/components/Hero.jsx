@@ -4,7 +4,7 @@ const Hero = () => {
   const videoRef = useRef();
 
   useEffect(() => {
-    if (videoRef.current) videoRef.current.playbackRate = 2;
+    if (videoRef.current) videoRef.current.playbackRate = 1;
   }, []);
 
 
@@ -21,7 +21,7 @@ const Hero = () => {
 
       <button>Buy </button>
 
-      <p>From $1599 or $123 for 12 months</p>
+  <p>From $1599 or $123 for 12 months</p>
 
     </section>
   )
