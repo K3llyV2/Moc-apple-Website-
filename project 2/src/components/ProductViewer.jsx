@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber';
 import {Box} from '@react-three/drei'
 import { OrbitControls } from '@react-three/drei';
 import MacbookModel14 from './mymodels/Macbook-14';
+import StudioLights from './StudioLights';
 
 
 const ProductViewer = () => {
@@ -48,10 +49,10 @@ const ProductViewer = () => {
 
        <Canvas id="canvas" camera={{ position :[0,2,5], fov: 50, near : 0.1, far:100 }} >
             <MacbookModel14 scale = {scale} position={[0,0,0]} />
-        
+            <StudioLights/>
             <OrbitControls enableZoom={false} />
-            <directionalLight position={[10,10,5]} intensity={1}/>
-            <directionalLight position={[-10,-10,-5]} intensity={1}/>
+           { /*<directionalLight position={[10,10,5]} intensity={1}/>
+            <directionalLight position={[-10,-10,-5]} intensity={1}/> */}
 
             
        </Canvas>
