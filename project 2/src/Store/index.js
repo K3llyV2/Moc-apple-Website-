@@ -1,5 +1,5 @@
  import {create} from 'zustand';
-//import React from 'react';
+ import React from 'react';
 
 const useMacbookStore = create((set) => ({
    color: '#2e2c2e',
